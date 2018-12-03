@@ -21,6 +21,14 @@ class Setup extends Component {
       <h2>
       Rest:
       </h2>
+      <ol>
+      <li>Install python3</li>
+      <li>Install <code> python-virtualenv</code></li>
+      <li>Create python3 virtualenv</li>
+      <li>Within the virtualenv <code> pip3 install flask</code> and <code> pip3 install flask-cors</code></li>
+      <li>After creating a simple flask app. To run use <code> python app.py</code></li>
+      <li>the app will be accesable at <code> http://localhost:5000/</code> by default</li>
+      </ol>
       </div>
 
     );
