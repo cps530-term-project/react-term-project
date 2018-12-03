@@ -39,6 +39,10 @@ Submission of the project is do be done on the D2L/Brightspace system. You will 
 [2] The URL of the demonstration website. Project is due Monday December 3, 5:00 pm.
 
 
+## How to Deploy react apps to heroku
+
+https://github.com/mars/create-react-app-buildpack
+
 ## Editting Pages 
 
 You can see all the pages within `src/Pages/{directoryName}/{directoryFile}.js` and edit them accordingly.
