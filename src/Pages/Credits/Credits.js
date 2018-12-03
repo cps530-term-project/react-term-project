@@ -9,7 +9,7 @@ class Credits extends Component {
         <li>Mohamed Bobat:HTML coding</li>
         <li>Rojina Dahal: summary about rest and demo and how to...</li>
         <li>Gagan Gill: Initial react setup, deployment and demo page</li>
-        <li>Samiran M:</li>
+        <li>Samiran M: React summary and conclusion</li>
         </ul>
       </div>
     );
