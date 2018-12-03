@@ -10,7 +10,7 @@ class ChatBox extends Component {
     messages: []
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/')
+    axios.get('https://example-flask-heroku.herokuapp.com/')
       .then(response => {
         this.setState({messages: response.data.messages})
       });
@@ -28,14 +28,14 @@ class ChatBox extends Component {
   submitMessageHandler = () => {
     const { messages, userMessage } = this.state;
     messages.push(userMessage);
-    axios.post('http://localhost:5000/', {messages})
+    axios.post('https://example-flask-heroku.herokuapp.com/', {messages})
       .then(response => {
       })
     this.setState({userMessage: ''})
   }
 
   clearMessagesHandler = () => {
-    axios.post('http://localhost:5000/', {messages: []})
+    axios.post('https://example-flask-heroku.herokuapp.com/', {messages: []})
       .then(response => {
         this.setState({messages: response.data.messages})
       })
@@ -44,9 +44,13 @@ class ChatBox extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.clearMessagesHandler}>Clear Messages</button>
+        <button
+          className="btn btn-danger"
+          onClick={this.clearMessagesHandler}>
+            Clear Messages
+          </button>
         <div className="header">
-              Chat Message Form
+              Chat Message Form Demo
           </div>
         <div className="flexContainer">
           <div>
@@ -59,7 +63,11 @@ class ChatBox extends Component {
           onChange={(e) => this.userMessageHandler(e)}
           value={this.state.userMessage}
           />
-          <button onClick={this.submitMessageHandler}>Send</button>
+          <button
+            className="btn btn-primary"
+            onClick={this.submitMessageHandler}>
+              Send
+          </button>
       </div>
 
     );
