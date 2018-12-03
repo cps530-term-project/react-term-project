@@ -7,7 +7,7 @@ class Credits extends Component {
         <h1>Credits</h1>
         <ul>
         <li>Mohamed Bobat:HTML coding</li>
-        <li>Rojina Dahal:</li>
+        <li>Rojina Dahal: rest summary and demo and how to...</li>
         <li>Gagan Gill:</li>
         <li>Samiran M:</li>
         </ul>
