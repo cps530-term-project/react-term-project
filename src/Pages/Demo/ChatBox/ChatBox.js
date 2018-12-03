@@ -12,7 +12,6 @@ class ChatBox extends Component {
   componentDidMount() {
     axios.get('http://localhost:5000/')
       .then(response => {
-        console.log(response.data);
         this.setState({messages: response.data.messages})
       });
   }
@@ -28,11 +27,9 @@ class ChatBox extends Component {
 
   submitMessageHandler = () => {
     const { messages, userMessage } = this.state;
-    console.log(userMessage);
     messages.push(userMessage);
     axios.post('http://localhost:5000/', {messages})
       .then(response => {
-        console.log(response.data);
       })
     this.setState({userMessage: ''})
   }
@@ -40,7 +37,6 @@ class ChatBox extends Component {
   clearMessagesHandler = () => {
     axios.post('http://localhost:5000/', {messages: []})
       .then(response => {
-        console.log(response.data);
         this.setState({messages: response.data.messages})
       })
   }
