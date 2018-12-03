@@ -1,0 +1,9 @@
+.chat-messages {
+  width: 100%;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  padding: .5em;
+  background-color: gainsboro;
+  border-radius: 1em;
+  word-break: break-all;
+}

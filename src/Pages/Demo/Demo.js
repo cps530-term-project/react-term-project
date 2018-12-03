@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
+import ChatBox from './ChatBox/ChatBox';
 
-class HomePage extends Component {
+class DemoPage extends Component {
   render() {
     return (
-      <div>
-      <h1>
-        Home Page
-      </h1>
-      </div>
+      <ChatBox />
     );
   }
 }
 
-export default HomePage;
+export default DemoPage;
