@@ -8,7 +8,7 @@ class Credits extends Component {
         <ul>
         <li>Mohamed Bobat:HTML coding</li>
         <li>Rojina Dahal: summary about rest and demo and how to...</li>
-        <li>Gagan Gill:</li>
+        <li>Gagan Gill: Initial react setup, deployment and demo page</li>
         <li>Samiran M:</li>
         </ul>
       </div>
