@@ -1,3 +1,8 @@
+## Demo
+It takes around 5 seconds for it to load.
+https://cps530-term-project-f2018.herokuapp.com/ 
+
+
 ## Project Requirements
 
 **CPS530 - Term Project**
